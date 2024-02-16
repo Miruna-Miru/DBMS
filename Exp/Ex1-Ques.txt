@@ -1,0 +1,61 @@
+Customer(cust_id, cust_name, city, grade, saleman_id)
+Salesman(saleman_id, name, city, commission)
+Orders(order_no, order_date, purchase_amount, cust_id, saleman_id)
+and answer the following queries in SQL.'
+
+
+1. Write a query to find those customers with their name and those salesmen with their name
+and city who lives in the same city.
+
+
+2. Write a SQL statement to display all those orders by the customers not located in the same
+cities where their salesmen live.
+
+
+3. Write a query that produces all customers with their name, city, salesman and commission,
+who served by a salesman and the salesman works at a rate of commission within 12% to
+14%.
+
+
+4. Write a SQL statement to arrange the orders according to the order date in such a manner
+that the latest date will come first then previous dates.
+
+5. Write a SQL statement to display the customer name, city and grade etc. and smallest
+customer ID will come first.
+
+6. Write a SQL statement make a report with customer ID in such a manner that, the largest
+number of orders booked by the customer will comes first along with their highest purchase
+amount.
+
+7. Write a SQL statement to make a report with order date in such a manner that, the latest
+order date will come first along with the total purchase amount and total commission (15%
+for all salesmen) for that date.
+
+8. Write a SQL statement to find those salesmen with all information who come from the city
+either Paris or Rome.
+
+9. Write a query to filter all those orders with all information which purchase amount value
+is within the range 500 and 4000 except those orders of purchase amount value 948.50 and
+1983.43.
+
+10. Write a SQL statement to find those salesmen with all other information and name started with any letter 'A' and 'L'.
+
+11. Write a SQL statement to find those salesmen with all information whose name contain
+only four characters, in which 1st character must be 'N' and 4th character is l and rests may
+be any character.
+
+12. Write a SQL statement to find those customers with all information who gets a grade except
+NULL value.
+
+13. Write a SQL query to display those customers who are neither belongs to the city New
+York nor grade value is more than 100.
+
+14. Write a SQL statement to display all information where purchase amount less than a
+specified amount or reverse order date greater than or equal to a specified date and
+customer id less than a specified number.
+
+15. Write a SQL query to display order number, purchase amount, archived, unachieved
+percentage for those order which exceeds the 50% of target value of 6000.
+
+16. Write a query which will retrieve the value of salesman id of all salesmen, getting orders
+from the customers in orders table without any repeats.
