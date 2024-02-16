@@ -35,3 +35,10 @@ insert into saleman22c075 values(1113,'Mira','Mdu',12000);
 insert into customer22c075 values(111,'Shin',9,'Paris',1111);
 
 select * from customer22c075;
+
+
+
+--QUESTION [1] 
+select c_id,c_nam, saleman22c075.s_id,s_nam,customer22c075.city
+from customer22c075 , saleman22c075
+where customer22c075.city=saleman22c075.city;
