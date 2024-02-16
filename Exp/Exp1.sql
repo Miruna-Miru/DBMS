@@ -42,3 +42,20 @@ select * from customer22c075;
 select c_id,c_nam, saleman22c075.s_id,s_nam,customer22c075.city
 from customer22c075 , saleman22c075
 where customer22c075.city=saleman22c075.city;
+
+
+-- QUESTION [2]
+select c_id,c_nam, saleman22c075.s_id,s_nam,customer22c075.city
+from customer22c075 , saleman22c075
+where customer22c075.city<>saleman22c075.city;
+
+
+
+
+
+
+
+
+-- QUESTION [8]
+select * from saleman22c075
+where city='Rome' or city='Paris';
