@@ -50,12 +50,82 @@ from customer22c075 , saleman22c075
 where customer22c075.city<>saleman22c075.city;
 
 
+--QUESTION[3]
+SELECT 
+    c.c_nam AS Customer_Name,
+    c.city AS Customer_City,
+    s.s_nam AS Salesman_Name,
+    s.city AS Salesman_City,
+    s.commission AS Salesman_Commission
+FROM 
+    customer22c075 c
+JOIN 
+    saleman22c075 s ON c.s_id = s.s_id
+WHERE 
+    s.commission BETWEEN 0.12 AND 0.14;
 
 
+--QUESTION [4]
+select * from orders22c075 order by o_date ;
 
+--QUESTION [5]
+select * from customer22c075 order by c_id;
+
+--QUESTION [6]
+SELECT c_id, COUNT(*) AS o_no, MAX(p_amt) AS max_amt
+FROM orders22c075
+GROUP BY c_id
+ORDER BY o_no DESC, max_amt DESC;
+
+--QUESTION [7]
+SELECT 
+    o_date, SUM(p_amt) AS total_purchase_amount, SUM(p_amt * 0.15) AS total_commission
+FROM 
+    orders22c075
+GROUP BY 
+    o_date
+ORDER BY 
+    o_date DESC;
 
 
 
 -- QUESTION [8]
 select * from saleman22c075
 where city='Rome' or city='Paris';
+
+
+--QUESTION [9]
+
+SELECT * FROM orders22c075
+WHERE p_amt BETWEEN 500 AND 4000
+AND p_amt NOT IN (948.50, 1983.43);
+
+
+--QUESTION [10]
+select * from saleman22c075 where s_nam like 'A%' or s_nam like 'L%';
+
+
+--QUESTION [11]
+select * from saleman22c075 where s_nam like 'N__l';
+
+
+--QUESTION [12]
+select * from customer22c075 where grade is not null;
+
+
+--QUESTION [13]
+select * from customer22c075 where city <> 'New York' and grade<100;
+
+
+--QUESTION [14]
+SELECT * FROM orders22c075
+WHERE  p_amt < 1500 OR (o_date >='12-02-2024' AND c_id < 200);
+
+
+--QUESTION [15]
+
+
+
+
+--QUESTION [16]
+select distinct s_id,o_no from orders22c075;
